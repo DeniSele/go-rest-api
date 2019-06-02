@@ -31,25 +31,26 @@ localost:8000/users
 
 # Request body
 {
-    "id": "0",  // will be determined automatically
+    "id": "0",  			// Will be determined automatically
     "firstname": "Albert",
     "secondname": "Einstein",
-    "phoneNumber": "44 879 65 32",  // optional field - may be empty
-    "email": "AlbertEinstein@gmail.com" // optional field - may be empty
+    "phoneNumber": "44 879 65 32",  	// Optional field - may be empty
+    "email": "AlbertEinstein@gmail.com" // Optional field - may be empty
 }
 ```
 
 #### `PUT` user update example
 ```bash
-localost:8000/user/6  // 6 - user id
+# 6 - user id
+localost:8000/user/6
 
 # Request body
 {
-    "id": "0",  // will be determined automatically
+    "id": "0",  			// Will be determined automatically
     "firstname": "Albert",
     "secondname": "Einstein",
-    "phoneNumber": "44 879 65 32",  // optional field - may be empty
-    "email": "AlbertEinstein@gmail.com" // optional field - may be empty
+    "phoneNumber": "44 879 65 32",  	// Optional field - may be empty
+    "email": "AlbertEinstein@gmail.com" // Optional field - may be empty
 }
 ```
 
@@ -59,9 +60,9 @@ localost:8000/account
 
 # Request body
 {
-    "id": "0",  // will be determined automatically
-    "idUser": "6",  // ID of the user who will own the wallet
-    "balance": "770"  // wallet initial balance
+    "id": "0",  	// Will be determined automatically
+    "idUser": "6",  	// ID of the user who will own the wallet
+    "balance": "770"  	// Wallet initial balance
 }
 ```
 
@@ -75,6 +76,27 @@ localost:8000/transactions
 	"finishDate": "2019-06-02"
 }
 ```
+
+
+#### `PUT` example of creating a new transaction
+```bash
+# 6 - Account ID initializing the transaction
+localost:8000/transaction/6
+
+# Request body
+{
+	"id": "1",		// Will be determined automatically
+	"idPersAcc": "6",	// Account ID initializing the transaction
+	"transType": "1",	// Transaction type
+	"date": "2019-06-01",	// Transaction date
+	"targetAccID": "6",	// Target Account (not always required)
+	"value": "200"		// Transaction value
+}
+```
+#### Transaction types
+- 0 - withdraw money
+- 1 - put money
+- 2 - transfer money to another account
 
 ```
 # API Endpoint : http://127.0.0.1:8000
