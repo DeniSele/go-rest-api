@@ -10,6 +10,13 @@ Unfortunately, I haven’t figured out the docker yet, so for now I'm only putti
 go get github.com/DeniSele/go-rest-api
 ```
 
+To install the database, go to the folder where you have installed PostgreSQL (my path: C:\Program Files\PostgreSQL\11\bin)
+Call the command line and type the following command:
+```bash
+psql -U postgres -f C:\databaseDump
+```
+Where "C:\databaseDump" is the path to the database dump file
+
 #### `GET` an example of getting all users
 This request can be made using:
 ```bash
