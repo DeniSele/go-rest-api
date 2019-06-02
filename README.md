@@ -17,6 +17,7 @@ psql -U postgres -f C:\databaseDump
 ```
 Where "C:\databaseDump" is the path to the database dump file
 
+
 #### `GET` an example of getting all users
 This request can be made using:
 ```bash
