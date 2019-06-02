@@ -175,7 +175,6 @@ COPY public.users_info (id, firstname, secondname, phone_number, email) FROM std
 4	Angela	Moss	29 788 43 44	 spoilers.later@gmail.com
 5	Tyrell	Wellick	44 102 02 88	heis.alive@gmail.com
 6	Elon	Musk	29 654 15 32	ElonMusk@gmail.com
-9	Elon	Musk	29 654 15 35	ElonMusk@gmail.com
 \.
 
 
