@@ -84,7 +84,7 @@ localost:8000/transactions
 ```
 |
 ├── database
-│   ├── database.go  // DB functions
+│   └── database.go  // DB functions
 ├── handler          // API core handlers
 │   ├── common.go    // Common response functions
 │   ├── users.go     // APIs for users
