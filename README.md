@@ -81,7 +81,7 @@ localost:8000/transactions
 │   └── accounts.go  // APIs for accounts
 └── model
 │    └── types.go    // Models for application
-└── database         // dump database file
+└── databaseDump     // dump database file
 └── Server.go
 ```
 
