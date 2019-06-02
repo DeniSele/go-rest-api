@@ -3,6 +3,7 @@ Simple REST API server with Go
 
 I made this simple REST API using "gorilla / mux" and PostgreSQL, as a database.
 Unfortunately, I haven’t figured out the docker yet, so for now I'm only putting in a dump database file.
+To test the application, I sent requests using the Postman App.
 
 ## Installation & Examples
 ```bash
