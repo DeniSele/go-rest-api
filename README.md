@@ -112,7 +112,7 @@ localost:8000/transaction/6
 │   ├── common.go    // Common response functions
 │   ├── users.go     // APIs for users
 │   └── accounts.go  // APIs for accounts
-└── model
+├── model
 │    └── types.go    // Models for application
 └── databaseDump     // dump database file
 └── Server.go
